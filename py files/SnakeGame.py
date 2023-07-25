@@ -7,6 +7,8 @@ import mysql.connector as mys
 from datetime import datetime
 import csv
 
+passkey = input("Enter mysql root password ")
+
 
 
 def Game():
@@ -227,7 +229,7 @@ def Game():
 
 def score_add():
     finalscore = Game()
-    con = mys.connect(host='localhost',user='root',password='bvme',database='snake')
+    con = mys.connect(host='localhost',user='root',password=passkey,database='snake')
     cur = con.cursor()
     name = input("Enter your name: ")
     s = datetime.now()
@@ -241,7 +243,7 @@ def score_add():
 # Basic MySQL function to express the scores from the database from latest to earliest score
 
 def show_scores_by_date():
-    con = mys.connect(host='localhost', user='root', password='bvme', database='snake')
+    con = mys.connect(host='localhost', user='root', password=passkey, database='snake')
     cur = con.cursor()
     cur.execute("select * from snake_scores ORDER BY Date_of_Score asc")
     info = cur.fetchall()
@@ -257,7 +259,7 @@ def show_scores_by_date():
 # MySQL function to express the scores from the database from the highest score to the lowest score
 
 def show_scores_by_highscores():
-    con = mys.connect(host='localhost', user='root', password='bvme', database='snake')
+    con = mys.connect(host='localhost', user='root', password=passkey, database='snake')
     cur = con.cursor()
     cur.execute("select * from snake_scores ORDER BY Score desc")
     info = cur.fetchall()
@@ -273,7 +275,7 @@ def show_scores_by_highscores():
 # MySQL function to delete every score from the database to start fresh
 
 def delete_all_scores():
-    con = mys.connect(host='localhost', user='root', password='bvme', database='snake')
+    con = mys.connect(host='localhost', user='root', password=passkey, database='snake')
     cur = con.cursor()
     cur.execute("DELETE from snake_scores")
     print("All scores DELETED!")
@@ -283,7 +285,7 @@ def delete_all_scores():
 # Function to export scores from the database to a .csv file
 
 def score_export():
-    con = mys.connect(host='localhost', user='root', password='bvme', database='snake')
+    con = mys.connect(host='localhost', user='root', password=passkey, database='snake')
     cur = con.cursor()
     cur.execute("select * from snake_scores")
     info = cur.fetchall()
