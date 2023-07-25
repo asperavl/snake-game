@@ -1,9 +1,12 @@
 #Code to create the database snake to house scores
+
 import time
 
 import mysql.connector as my
 
-con = my.connect(host='localhost', user='root', password='bvme')
+passkey = input("Enter Password for root ")
+
+con = my.connect(host='localhost', user='root', password=passkey)
 
 cur=con.cursor()
 
