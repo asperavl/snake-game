@@ -14,8 +14,13 @@ The scores can be:
 The program was designed to be run only on Windows (although we may add support for Linux in the future).
 
 PRE-REQUISITES:
-                1. MySQL should be installed and configured such that root password is 'bvme' (Unless you were to change it inside the database_creation.py file)
+                1. MySQL should be installed and configured such that root password is 'bvme' (Unless you were to                       change it inside the database_creation.py file)
                 2. MySQL-connector should be installed on the system
                 3. Python should be installed (any version after version 3 should do)
+
+How to Run the Game:
+                1. Run database_creation.py, once it is done you need not run it again.
+                2. Run SnakeGame.py every time you want to run the game.
+                
 
 Have fun setting scores on SnakeGame!
