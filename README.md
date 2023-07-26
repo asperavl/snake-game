@@ -1,6 +1,6 @@
 Snake Game!
 
-This was a simple project two friends and I made for a school project
+This was a simple project fastlane956, Max948X, and I made for a school project
 
 As the title says, we built a version of snake game using mainly the turtle module of python, along with supplementary modules including mysql-connector, datetime, and more!
 
