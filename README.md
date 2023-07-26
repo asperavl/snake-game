@@ -4,7 +4,7 @@ This was a simple project two friends and I made for a school project
 
 As the title says, we built a version of snake game using mainly the tkinter module of python, along with supplementary modules including mysql-connector, datetime, and more!
 
-The scores are stored in a database created by the database_creation.exe file. The password for the mysql shell is given as "bvme", but it can be edited to your password if needed.
+The scores are stored in a database created by the database_creation.exe file. The password for the mysql shell is given as "bvme".
 
 The scores can be:
                     1. Shown either from highest to lowest or latest to earliest
