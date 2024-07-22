@@ -11,17 +11,6 @@ The scores can be:
                     2. Exported to a .csv file
                     3. Deleted
 
-The program was designed to be run only on Windows (although we may add support for Linux in the future).
+The program was designed to be run only on Windows
 
-PRE-REQUISITES:
-                1. MySQL server should be installed
-                2. MySQL-connector should be installed on the system
-                3. Python should be installed (any version after version 3 should do)
 
-How to Run the Game:
-                1. Run database_creation.exe, once it is done you need not run it again.
-                2. Run SnakeGame.exe every time you want to run the game.
-
-NOTE: You must enter the right password for MySQL, otherwise SnakeGame.exe wont be able to save any of the scores!
-
-Have fun setting scores on SnakeGame!
