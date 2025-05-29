@@ -11,6 +11,4 @@ The scores can be:
                     2. Exported to a .csv file
                     3. Deleted
 
-i wouldnt reccomend downloading and trying it out, its full of spaghetti code 
-
 
